@@ -19,8 +19,9 @@ html {
 body {
   border-top: 2px var(--color-primary) solid;
   font-size: 1.4rem;
-  background-color: #ecf3ff;
+  background-color: #f9fbff;
   background-image: url(../images/code-background.svg);
+  color: rgb(46, 50, 71)
 }
 
 .nav {
@@ -53,13 +54,19 @@ body {
   padding: 0 3rem
 }
 
+.header__content {
+  flex: 0 0 50%
+}
+
 .header__title {
   font-weight: bolder;
   margin-bottom: 1rem;
+  font-size: 4rem
 }
 
 .header__description {
   margin-bottom: 2.5rem;
+  font-size: 2rem
 }
 
 .header__cta {
@@ -70,12 +77,14 @@ body {
   color: rgb(242, 255, 248);
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.25);
   font-weight: 600;
+  font-size: 2rem;
   margin-bottom: 6rem;
 
   transition: transform .2s;
 }
 
 .header__cta:hover {
+  cursor: pointer;
   box-shadow: 0 1.2rem 3rem rgba(0,0,0,0.2);
   transform: scale(1.05);
 }
@@ -87,7 +96,18 @@ body {
 }
 
 .header__img {
-  height: 80vh
+  flex: 1;
+  height: 80%;
 }
 
+/* responsive stuf */
+@media screen and (max-width: 1125px) {
+  .header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
+  .header__img {
+    height: 40%;
+  }
+}
