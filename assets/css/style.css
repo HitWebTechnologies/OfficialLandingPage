@@ -25,6 +25,7 @@ body {
 }
 
 .nav {
+  margin-bottom: 3rem;
 }
 
 
@@ -34,7 +35,6 @@ body {
   color: currentColor;
   text-decoration: none;
   padding: 3rem 12rem;
-  margin-bottom: 3rem;
 }
 
 .nav__brand:hover {
