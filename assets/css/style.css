@@ -33,7 +33,8 @@ body {
   align-items: center;
   color: currentColor;
   text-decoration: none;
-  padding: 3rem
+  padding: 3rem 12rem;
+  margin-bottom: 3rem;
 }
 
 .nav__brand:hover {
