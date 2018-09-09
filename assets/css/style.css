@@ -26,6 +26,9 @@ body {
 
 .nav {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600
 }
 
 
@@ -37,7 +40,13 @@ body {
   padding: 3rem 12rem;
 }
 
-.nav__brand:hover {
+.nav__item {
+  color: currentColor;
+  text-decoration: none;
+  padding: 3rem 12rem;
+}
+
+.nav__brand:hover, .nav__item:hover {
   background: #38c17141;
 }
 
@@ -110,5 +119,21 @@ body {
 
   .header__img {
     height: 40%;
+  }
+
+  .nav__brand, .nav__item {
+    padding: 3rem 6rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+  .nav__brand, .nav__item {
+    display: flex;
+    justify-content: center
   }
 }
