@@ -80,6 +80,8 @@ body {
 }
 
 .header__cta {
+  display: inline-block;
+  text-decoration: none;
   border: 0;
   background: var(--color-primary);
   padding: 1.2rem 1.8rem;
