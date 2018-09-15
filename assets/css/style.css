@@ -90,7 +90,6 @@ body {
   box-shadow: 0 1rem 3rem rgba(0,0,0,0.25);
   font-weight: 600;
   font-size: 2rem;
-  margin-bottom: 6rem;
 
   transition: transform .2s;
 }
@@ -99,6 +98,25 @@ body {
   cursor: pointer;
   box-shadow: 0 1.2rem 3rem rgba(0,0,0,0.2);
   transform: scale(1.05);
+}
+
+.header__login {
+  margin: 3rem 0;
+}
+
+.header__login-btn {
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: var(--color-primary) 2px solid;
+
+  transition: padding .2s;
+}
+
+.header__login-btn:hover {
+  cursor: pointer;
+  padding: 1rem 4rem;
 }
 
 .header__footnote {
